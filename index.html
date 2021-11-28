@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy Generator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Giphy Finder</h1>
+        </div>
+        <div class="icon-area">
+            <i class="fas fa-moon fa-2x dark"></i>
+        </div>
+    </header>
+
+    <form id="search-form">
+        <div>
+            <label for="search_giphy">Search Giphy</label>
+        </div>
+        <div>
+            <input autofocus autocomplete="off" type="text" id="search_input" placeholder="Search...">
+        </div>
+        <button type="submit">
+            Search
+        </button>
+    </form>
+
+    <div class="result">
+        <img src="https://via.placeholder.com/350x150" alt="">
+    </div>
+
+    <div class="loading-modal">
+        <div class="loader"></div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script type="module" src="scripts/toggle.js"></script>
+    <script type="module" src="scripts/state.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
