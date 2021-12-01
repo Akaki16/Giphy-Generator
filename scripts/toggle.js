@@ -24,20 +24,6 @@ const showAppTextColor = () => {
     document.body.style.color = '#' + textColor;
 }
 
-darkIcon.addEventListener('click', () => {
-
-    setAppBgColor('333');
-
-    setAppTextColor('fff');
-
-    StateValue.addBgColor('333');
-
-    StateValue.addTextColor('fff');
-
-    iconArea.innerHTML = `<i class="fas fa-sun fa-2x light"></i>`;
-
-});
-
 // toggle betwen themes
 document.querySelector('.icon-area').addEventListener('click', e => {
     const element = e.target.classList;
