@@ -25,12 +25,12 @@ const showAppTextColor = () => {
 }
 
 const setAppToggleIcon = (icon) => {
-    document.querySelector('.icon-area').innerHTML = icon;
+    iconArea.innerHTML = icon;
 }
 
 const displayAppToggleIcon = () => {
     const toggleIcon = StateValue.getToggleIcon();
-    document.querySelector('.icon-area').innerHTML = toggleIcon;
+    iconArea.innerHTML = toggleIcon;
 }
 
 // toggle betwen themes
@@ -48,6 +48,7 @@ document.querySelector('.icon-area').addEventListener('click', e => {
         setAppToggleIcon(`<i class="fas fa-moon fa-2x dark"></i>`);
 
         StateValue.addToggleIcon(`<i class="fas fa-moon fa-2x dark"></i>`);
+
     } else if (element.contains('dark')) {
         setAppBgColor('333');
 

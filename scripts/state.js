@@ -18,8 +18,8 @@ class StateValue {
         }
         return textColor;
     }
-    
-    static getToggleIcon() {
+
+    static getToggleIcon = () => {
         let toggleIcon;
         let defaultIcon = `<i class="fas fa-moon fa-2x dark"></i>`;
         if (!localStorage.getItem('toggleicon')) {
@@ -41,11 +41,11 @@ class StateValue {
         textColor = color;
         localStorage.setItem('textcolor', textColor);
     }
-    
+
     static addToggleIcon(icon) {
         let toggleIcon = StateValue.getToggleIcon();
         toggleIcon = icon;
-        localStorage.setItem('toggleicon', icon);
+        localStorage.setItem('toggleicon', toggleIcon);
     }
 }
 
