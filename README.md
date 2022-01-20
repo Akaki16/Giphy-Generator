@@ -10,6 +10,8 @@ You can generate Giphy based on your search value
 
 Also you can toggle between dark/light themes
 
+[live demo](https://akaki16.github.io/Giphy-Generator/)
+
 ### Running docs
 
 #### Steps
